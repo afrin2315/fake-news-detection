@@ -1,45 +1,46 @@
-# 📰 Fake News Detection using Machine Learning & NLP
+📰 Fake News Detection using Machine Learning
 
-This project is an end-to-end Fake News Detection system built using Natural Language Processing (NLP) and Machine Learning. It uses real news articles and fake news datasets to train a binary classifier, and provides a user-friendly Streamlit app for real-time news validation.
+This project detects whether a news article is *real* or *fake* using traditional machine learning algorithms and NLP techniques.
 
-## 📌 Project Highlights
+Features
+- Data preprocessing: cleaning, tokenization, stopword removal
+- Feature extraction using TF-IDF vectorization
+- Classification using algorithms such as:
+  - Logistic Regression
+  - Naive Bayes
+  - Random Forest
+  - Passive Aggressive Classifier
+- Achieved up to 96% accuracy
 
-- ✅ Cleaned & Preprocessed real-world datasets (True.csv, Fake.csv)
-- ✅ Applied NLP techniques: Tokenization, Stopwords, Vectorization
-- ✅ Trained ML model (PassiveAggressiveClassifier) with 99% accuracy
-- ✅ Built interactive web app using Streamlit for live news prediction
-- ✅ Saved and deployed trained model with `joblib`
+Dataset
+- Source: [Fake and Real News Dataset](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset)
+- Contains labeled news articles (real and fake)
 
----
+Installation
+1. Clone this repository:
+  
+   git clone https://github.com/afrin2315/fake-news-detection.git
 
-## 🗂️ Project Structure
+2. Install dependencies:
 
-fake-news-detection/
-├── apps/ # Streamlit app code
-│ └── app.py
-├── models/ # Saved ML model
-│ └── fake_news_model.pkl
-├── notebooks/ # Jupyter notebooks for data exploration & training
-│ └── training.ipynb
-├── Fake.csv # Fake news dataset
-├── True.csv # Real news dataset
-└── README.md # Project overview
-
-1. Clone the repository
-   ```bash
-   git clone https://github.com/yourusername/fake-news-detection.git
-   cd fake-news-detection
-
-2.pip install -r requirements.txt
-
-3.streamlit run apps/app.py
+pip install -r requirements.txt
 
 
-## 👨‍💻 Author
 
-Afrin Kousar — AIML Student, 3rd Year  
-🔗 [LinkedIn]www.linkedin.com/in/afrin-kousar 
+Usage
+
+Run the main script:
+
+python fake_news_detection.py
+You can modify the code or add scripts for training and evaluation.
+
+Results
+
+Logistic Regression with TF-IDF features gave the best accuracy (~96%)
+Visualization of confusion matrix and classification reports included
 
 
-Email: afrinkousar98@gmail.com
+Future Work
 
+Deploy as a web app using Streamlit or Flask
+Add user input interface to predict news real/fake on the fly
