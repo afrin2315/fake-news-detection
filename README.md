@@ -25,8 +25,6 @@ This project is an end-to-end Fake News Detection web app built using Natural La
 - Scikit-learn
 - HTML/CSS
 
-🔗 Try the App
-👉 [Live Demo (Render)](https://fake-news-afrin.onrender.com) <!-- Put your real link here -->
 
 📦 Setup Locally
 
